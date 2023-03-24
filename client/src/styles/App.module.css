@@ -1,0 +1,19 @@
+.menu_icon {
+  @apply relative left-full z-10;
+}
+
+.app_container {
+  @apply w-screen rounded-3xl p-0 m-0;
+  max-height: 96vh;
+  overflow-y: scroll;
+}
+.app_container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+@media screen and (max-width: 960px) {
+  .menu_icon {
+    @apply relative z-10;
+    left: 97%;
+  }
+}

@@ -1,0 +1,31 @@
+.sidebar_slider {
+  @apply absolute rounded-r-2xl align-middle;
+
+  background-color: var(--secondary-sky-color);
+  -webkit-box-shadow: inset -5px 0px 10px -5px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: inset -5px 0px 10px -5px rgba(0, 0, 0, 0.62);
+  box-shadow: inset -5px 0px 10px -5px rgba(0, 0, 0, 0.62);
+  width: 25%;
+  height: 100vh;
+  top: 0%;
+  z-index: 2;
+  transition: 1s ease;
+}
+
+.sidebar_title {
+  @apply text-white !font-black !text-3xl pb-10;
+}
+
+@media screen and (max-width: 960px) {
+  .sidebar_slider {
+    width: 100%;
+    left: -100%;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .sidebar_title {
+    @apply text-white !font-black !text-2xl pb-10 w-auto flex-col px-5 text-center;
+  }
+}

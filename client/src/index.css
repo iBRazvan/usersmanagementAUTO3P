@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-sky-color: #00ace8;
+  --secondary-sky-color: #66cdf1;
+  --accent-sky-color: #bfeaf9;
+
+  --primary-sun-color: #ffaa00;
+  --secondary-sun-color: #ffcc66;
+  --accent-sun-color: #ffeabf;
+
+  background: rgb(255, 234, 191);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 234, 191, 1) 0%,
+    rgba(191, 234, 249, 1) 100%
+  );
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
